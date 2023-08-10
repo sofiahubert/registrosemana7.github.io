@@ -21,7 +21,7 @@
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" required>
+              <input type="text" class="form-control" id="nombre">
             </div>
 
             <div class="col-sm-6">
@@ -36,17 +36,17 @@
 
             <div class="col-sm-6">
               <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password1" required>
+              <input type="password" class="form-control" id="password1" required minlength="6">
             </div>
 
             <div class="col-sm-6">
               <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2" required>
+              <input type="password" class="form-control" id="password2" required minlength="6">
             </div>
 
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="terminos">
-              <label class="form-check-label" for="terminos">Acepto los términos y condiciones del servicio.</label>
+              <input type="checkbox" class="form-check-input" id="terminos"required>
+              <label class="form-check-label" for="terminos">Acepto los términos y condiciones del servicio. </label>
             </div>
 
             <button class="btn btn-primary" type="button" id="regBtn">Registrarme</button>
@@ -73,11 +73,19 @@
 
   <div class="alert alert-danger alert-dismissible fade" role="alert" id="alert-danger">
     <p>Los datos ingresados no cumplen con los requisitos solicitados</p>
-    <button type="submit" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/validacion.js"></script>
-</body>
+  
 
 </html>
+
+
+
+
+
+
+
+
